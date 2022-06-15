@@ -28,6 +28,7 @@ public class BookService {
 	
 	public void delete(Integer id) {
 		BookBean bookBean = new BookBean();
+		bookBean.setId(id);
 		bookRepository.delete(bookBean);
 	}
 	
